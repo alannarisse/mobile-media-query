@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Kavoon&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  font-family: 'Inter', sans-serif;
+  color: #383737;
+  font-weight:300;
+}
+img {
+  width:100%;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family:'Kavoon', cursive;
+  -webkit-text-stroke:1px  rgba(255,255,255,0.5);
+}
+
+
+nav {
+  background: #ADDCA5;
+  display:flex;
+  justify-content: space-between;
+  padding:0 20px;
+}
+nav ul {
+  display:flex;
+  padding-left:20px;
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+nav a {
+  display:inline-block;
+  padding:26px;
+}
+nav ul a:hover {
+  filter: invert(90%);
+
+}
+
+header {
+  background-image: url('images/hero-desktop.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  min-height: 272px;
+  display:flex;
+  align-items:center;
+}
+header h1 {
+  display:inline-block;
+  width:40%;
+  margin:0;
+  padding-left:40px;
+  font-size:60px;
+}
+
+.row-one, .row-two {
+  display:flex;
+}
+.box {
+  flex:1;
+  padding:60px;
+}
+.box h2 {
+  padding-top:60px;
+}
+.light-green {
+  background: #ADDCA5;
+  color:#383737;
+}
+.dark-green {
+  background-color: #44653F;
+  color: #fff;
+}
+footer {
+  background-color: #312E2E;
+  padding:80px 40px;
+  display:flex;
+  justify-content: space-between;
+}
+footer, footer a {
+  color: #fff;
+}
+input {
+  border:2px solid white;
+  background-color: #666;
+}
+button {
+  border-radius: 10px;
+  padding:6px 10px;
+}
+label {
+  display:inline-block;
+  padding-bottom:10px;
+}
+
+@media screen and (max-width: 1024px) {
+  header h1 {
+    width:80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction:column;
+  }
+  nav a {
+    padding:0;
+  }
+  nav ul a {
+    padding-right:20px;
+  }
+  header h1 {
+    width:100%;
+    font-size:48px;
+    color:#fff;
+    -webkit-text-stroke:1px  rgba(255,255,255,0);
+  }
+  header {
+    background-image: url('images/hero-mobile.png');
+  }
+  .row-one {
+    flex-direction:column;
+  }
+  .row-two {
+    flex-direction:column-reverse;
+  }
+  .box h2 {
+    padding-top:0;
+  }
+  .box {
+    padding:20px;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer .links {
+    text-align:center;
+    padding-top:30px;
+  }
+  footer .subscribe {
+    text-align:center;
+  }
+  
+}
